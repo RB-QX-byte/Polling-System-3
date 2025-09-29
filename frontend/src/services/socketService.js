@@ -8,7 +8,7 @@ class SocketService {
     this.studentName = null;
   }
 
-  connect(serverUrl = 'https://polling-system-3-backend-pied.vercel.app') {
+  connect(serverUrl = 'https://polling-backend-b3s5.onrender.com') {
     if (this.socket && this.isConnected) {
       return this.socket;
     }
