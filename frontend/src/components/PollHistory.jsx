@@ -269,7 +269,7 @@ function PollHistory() {
     const fetchPollHistory = async () => {
       try {
         console.log('Fetching poll history...');
-        const response = await fetch('http://localhost:3001/api/poll/history');
+        const response = await fetch('https://polling-system-3-backend-pied.vercel.app/api/poll/history');
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

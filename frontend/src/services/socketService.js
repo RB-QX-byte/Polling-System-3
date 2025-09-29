@@ -8,7 +8,7 @@ class SocketService {
     this.studentName = null;
   }
 
-  connect(serverUrl = 'http://localhost:3001') {
+  connect(serverUrl = 'https://polling-system-3-backend-pied.vercel.app') {
     if (this.socket && this.isConnected) {
       return this.socket;
     }

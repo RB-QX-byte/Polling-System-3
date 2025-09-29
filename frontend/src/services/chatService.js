@@ -44,7 +44,7 @@ class ChatService {
   // Fetch chat history from backend
   async fetchChatHistory() {
     try {
-      const response = await fetch('http://localhost:3001/api/chat/messages');
+      const response = await fetch('https://polling-system-3-backend-pied.vercel.app/api/chat/messages');
       const data = await response.json();
       this.messages = data.messages || [];
       this.notifyListeners();
@@ -56,7 +56,7 @@ class ChatService {
   // Fetch participants list
   async fetchParticipants() {
     try {
-      const response = await fetch('http://localhost:3001/api/participants');
+      const response = await fetch('https://polling-system-3-backend-pied.vercel.app/api/participants');
       const data = await response.json();
       this.participants = data.participants || [];
       this.notifyListeners();
